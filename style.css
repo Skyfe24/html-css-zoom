@@ -20,6 +20,7 @@ header {
   position: fixed;
   right: 0;
   left: 0;
+  z-index: 3;
 }
 li {
   display: inline;
@@ -30,6 +31,7 @@ main {
   height: calc(100vh - 120px);
   overflow-y: auto;
   background-color: rgb(0, 0, 0);
+  overflow: scroll;
 }
 
 footer {
@@ -40,8 +42,31 @@ footer {
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: 3;
 }
 .Speaker-icon {
   background-color: rgb(30, 27, 27);
   border-radius: 10%;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.container{
+    max-height: 100px;
+    position: relative;
+    
+    
+}
+.user{
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    color: white;
+}
+img{
+    max-width: 500px;
+    max-height: 300px;
 }
