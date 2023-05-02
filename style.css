@@ -7,12 +7,13 @@ body {
   height: 100vh;
 }
 .greycircle {
-  border-radius: 15%;
+  border-radius: 10%;
   background-color: rgb(128, 128, 121);
-  padding: 3px;
+  padding: 10px;
+
 }
 header {
-  height: 60px;
+  height: 80px;
   background-color: rgb(0, 0, 0);
   color: white;
   text-align: right;
@@ -28,14 +29,14 @@ li {
 }
 
 main {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 160px);
   overflow-y: auto;
   background-color: rgb(0, 0, 0);
   overflow: scroll;
 }
 
 footer {
-  height: 60px;
+  height: 80px;
   background-color: rgb(66, 56, 56);
   position: fixed;
   position: fixed;
@@ -50,23 +51,28 @@ footer {
 }
 
 .wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+    max-width: 1080px;
+    margin: 100px auto;
 }
-.container{
-    max-height: 100px;
+.row{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.card{
     position: relative;
-    
-    
+    flex-basis: calc(100% / 7 - 70px);
+}
+img{
+    max-width: 300px;
 }
 .user{
     position: absolute;
-    bottom: 2px;
+    bottom: 10px;
     left: 0px;
-    color: white;
-}
-img{
-    max-width: 500px;
-    max-height: 300px;
+    background-color: grey;
+    opacity: 0.7;
 }
