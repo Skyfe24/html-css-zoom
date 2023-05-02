@@ -1,5 +1,47 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.greycircle {
+  border-radius: 15%;
+  background-color: rgb(128, 128, 121);
+  padding: 3px;
+}
+header {
+  height: 60px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: right;
+  line-height: 40px;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+li {
+  display: inline;
+  margin: 5px;
+}
+
+main {
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+  background-color: rgb(0, 0, 0);
+}
+
+footer {
+  height: 60px;
+  background-color: rgb(66, 56, 56);
+  position: fixed;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.Speaker-icon {
+  background-color: rgb(30, 27, 27);
+  border-radius: 10%;
 }
